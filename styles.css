@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #222;
+    padding: 10px 0;  /* Reduced padding */
+    text-align: center;
+    margin-bottom: 0; /* Ensure no space below the header */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px; /* Reduced margin between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform-origin: center bottom;
+}
+
+/* Hover effect for floating animation */
+nav ul li a:hover {
+    transform: translateY(-5px);
+    color: #f4a261;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px;  /* Reduced padding */
+    background: #444;
+    color: white;
+    text-align: center;
+    margin-top: -10px; /* Reduced margin to decrease space between nav and hero */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero h1 span {
+    color: #f4a261;
+}
+
+.hero img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f4a261;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 30px 20px; /* Reduced padding */
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px 0; /* Reduced margin */
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 40px 20px; /* Adjusted padding */
+    background-color: #f1f5f9; /* Lighter background for a cleaner look */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a raised look */
+}
+
+.contact h1, .contact p {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+
+.social-media {
+    display: flex; /* Use flexbox to align icons in a row */
+    justify-content: center; /* Center the icons horizontally */
+    gap: 2px; /* Add space between icons */
+    margin-top: 30px; /* Add margin for spacing */
+}
+
+.social-icon-container {
+    position: relative;
+    width: 150px; /* Define the icon container width */
+    height: 150px; /* Define the icon container height */
+    background-color: #ffffff; /* White background for clean look */
+    border: 2px solid #ddd; /* Border to make the box distinct */
+    border-radius: 10px; /* Rounded corners for icons */
+    overflow: hidden; /* Ensure the image fits within the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon-container:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+.social-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Slight rounding for image corners */
+}
+
+.social-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly darker background */
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #222;
+    color: white;
+}
